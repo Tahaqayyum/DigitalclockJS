@@ -1,0 +1,77 @@
+@font-face {
+  font-family: digital;
+  src: url(fonts/digital.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #14213d;
+  color: #222;
+  font-family: digital;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#digitalclock {
+  font-size: 80px;
+  background: #fca311;
+  padding: 40px 60px;
+  width: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 5rem;
+  color: #fff;
+  background-color: #14213d;
+}
+#timer{
+  background-color: #fff;
+}
+span {
+  margin: 0 5px;
+  width: 80px;
+  padding: 15px;
+  text-align: center;
+  display: inline-block;
+  font-family: digital;
+}
+#ampm {
+  font-size: 50px;
+  color: #222;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 15px;
+}
+
+
+/* Responsive design code */
+
+@media (max-width: 480px) {
+  #digitalclock {
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    gap: 0.5rem;
+  }
+
+  h4 {
+    font-size: 2.5rem;
+  }
+
+  #digitalclock span {
+    width: 3ch;
+    padding: 0.6rem 0.4rem;
+  }
+
+  #ampm {
+    font-size: 1rem;
+  }
+}
