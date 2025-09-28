@@ -56,9 +56,14 @@ span {
 /* Responsive design code */
 
 @media (max-width: 480px) {
+  body {
+  overflow: hidden;
+}
+
+
   #digitalclock {
-    font-size: 2rem;
-    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    padding: 1rem;
     gap: 0.5rem;
   }
 
